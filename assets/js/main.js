@@ -258,20 +258,8 @@ const on = (type, el, listener, all = false) => {
 	const msg = select('#Message')
 	const sub = select('#subject')
 	const errorElement = select('.error-message')
-//smtp
-function sendMail(e) {
-	e.preventDefault()
-	Email.send({
-		Host: 'smtp.elasticemail.com',
-		Username: 'joelmulammoottil994',
-		Password: 'mulammoottil994',
-		SecureToken: '90E870518526C049E921191D2987F4482BA9',
-		To: 'joelmulammoottil994@gmail.com',
-		From: mail.value,
-		Subject: sub.value,
-		Body: msg.value,
-	}).then(message => alert(message))
-}
+
+
 /**
  * Initiate Pure Counter
 */
